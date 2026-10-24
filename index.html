@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♡ Pink Memories Album ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="floating-decor decor-a">♡</div>
+  <div class="floating-decor decor-b">✿</div>
+  <div class="floating-decor decor-c">🎀</div>
+  <div class="floating-decor decor-d">✧</div>
+
+  <main class="app">
+    <header class="site-heading">
+      <p class="eyebrow">A TINY BOOK FULL OF YOU</p>
+      <h1>Icaa</h1>
+      <p class="intro">Little Pics, Cute Memories ♡</p>
+    </header>
+
+    <section class="album-shell" aria-live="polite">
+      <section class="cover" id="cover">
+        <div class="cover-ribbon">♡ made with abdan ♡</div>
+        <span class="cover-sticker sticker-left">🌷</span>
+        <span class="cover-sticker sticker-right">🧸</span>
+        <div class="cover-content">
+          <div class="cover-top-decor">୨୧ · ˚₊‧꒰ა ☆ ໒꒱ ‧₊˚ · ୨୧</div>
+          <div class="cover-heart">♡</div>
+          <p class="cover-kicker" id="coverKicker"></p>
+          <h2 id="coverTitle"></h2>
+          <p id="coverSubtitle" class="cover-subtitle"></p>
+          <div class="cover-bottom-decor">✿ ♡ 🎀 ♡ ✿</div>
+          <button class="open-button" id="openBtn" type="button">Open your album <span>♡</span></button>
+        </div>
+        <div class="cover-footnote">turn the page, keep the memory</div>
+      </section>
+
+      <section class="book" id="book" hidden>
+        <div class="book-binding"></div>
+        <header class="book-header">
+          <span class="mini-brand">♡ PINKIE SCRAPBOOK ♡</span>
+          <button class="close-button" id="closeBtn" type="button" aria-label="Tutup album">×</button>
+        </header>
+        <div class="page-content" id="pageContent">
+          <div class="page-topline">
+            <span class="tiny-flower">✿</span>
+            <span id="pageNumber">PAGE 01 / 04</span>
+            <span class="tiny-flower">✿</span>
+          </div>
+          <h2 class="page-title" id="pageTitle"></h2>
+          <p class="page-subtitle" id="pageSubtitle"></p>
+          <div class="photo-grid" id="photoGrid"></div>
+          <div class="page-bottom-decor" id="pageDecor"></div>
+        </div>
+        <footer class="book-footer">
+          <button class="page-button previous-button" id="prevBtn" type="button">♡ Back</button>
+          <span class="page-dots" id="pageDots" aria-label="Halaman 1 dari 4">● ○ ○ ○</span>
+          <button class="page-button next-button" id="nextBtn" type="button">Next page ♡</button>
+        </footer>
+        <p class="music-status" id="musicStatus">♫ a little song for your memories ♫</p>
+      </section>
+    </section>
+    <p class="bottom-note">✧ take it slow, keep it sweet ✧</p>
+  </main>
+
+  <audio id="albumAudio" preload="auto"></audio>
+</body>
+</html>
